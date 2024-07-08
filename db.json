@@ -53,6 +53,87 @@
       "category": "Electronics",
       "image": "https://via.placeholder.com/150",
       "stock": 60
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with high-quality sound",
+      "price": 89,
+      "category": "Accessories",
+      "image": "https://via.placeholder.com/150",
+      "stock": 150
+    },
+    {
+      "id": 8,
+      "name": "Refrigerator",
+      "description": "Energy-efficient double-door refrigerator",
+      "price": 799,
+      "category": "Home Appliances",
+      "image": "https://via.placeholder.com/150",
+      "stock": 20
+    },
+    {
+      "id": 9,
+      "name": "Microwave Oven",
+      "description": "Convection microwave oven with grill",
+      "price": 199,
+      "category": "Home Appliances",
+      "image": "https://via.placeholder.com/150",
+      "stock": 35
+    },
+    {
+      "id": 10,
+      "name": "Fitness Tracker",
+      "description": "Waterproof fitness tracker with heart rate monitor",
+      "price": 79,
+      "category": "Wearables",
+      "image": "https://via.placeholder.com/150",
+      "stock": 120
+    },
+    {
+      "id": 11,
+      "name": "Gaming Console",
+      "description": "Next-gen gaming console with 4K support",
+      "price": 499,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/150",
+      "stock": 25
+    },
+    {
+      "id": 12,
+      "name": "Electric Kettle",
+      "description": "Fast-boiling electric kettle with auto shut-off",
+      "price": 29,
+      "category": "Home Appliances",
+      "image": "https://via.placeholder.com/150",
+      "stock": 90
+    },
+    {
+      "id": 13,
+      "name": "Wireless Earbuds",
+      "description": "True wireless earbuds with long battery life",
+      "price": 129,
+      "category": "Accessories",
+      "image": "https://via.placeholder.com/150",
+      "stock": 200
+    },
+    {
+      "id": 14,
+      "name": "Smart Thermostat",
+      "description": "WiFi-enabled smart thermostat with remote control",
+      "price": 149,
+      "category": "Home Appliances",
+      "image": "https://via.placeholder.com/150",
+      "stock": 55
+    },
+    {
+      "id": 15,
+      "name": "Smart Glasses",
+      "description": "Augmented reality smart glasses with voice control",
+      "price": 399,
+      "category": "Wearables",
+      "image": "https://via.placeholder.com/150",
+      "stock": 10
     }
   ],
   "categories": [
@@ -85,6 +166,24 @@
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
       "password": "password123"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "email": "charlie.davis@example.com",
+      "password": "password123"
     }
   ],
   "orders": [
@@ -103,6 +202,70 @@
       "quantity": 2,
       "total_price": 398,
       "status": "Processing"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "product_id": 5,
+      "quantity": 1,
+      "total_price": 149,
+      "status": "Delivered"
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "product_id": 10,
+      "quantity": 3,
+      "total_price": 237,
+      "status": "Shipped"
+    },
+    {
+      "id": 5,
+      "user_id": 5,
+      "product_id": 7,
+      "quantity": 1,
+      "total_price": 89,
+      "status": "Processing"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "product_id": 12,
+      "quantity": 2,
+      "total_price": 58,
+      "status": "Delivered"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "product_id": 9,
+      "quantity": 1,
+      "total_price": 199,
+      "status": "Shipped"
+    },
+    {
+      "id": 8,
+      "user_id": 3,
+      "product_id": 15,
+      "quantity": 1,
+      "total_price": 399,
+      "status": "Delivered"
+    },
+    {
+      "id": 9,
+      "user_id": 4,
+      "product_id": 8,
+      "quantity": 1,
+      "total_price": 799,
+      "status": "Processing"
+    },
+    {
+      "id": 10,
+      "user_id": 5,
+      "product_id": 6,
+      "quantity": 1,
+      "total_price": 299,
+      "status": "Shipped"
     }
   ]
 }
