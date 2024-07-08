@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "description": "Latest model with high-end features",
+      "price": 699,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/150",
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "description": "Lightweight and powerful",
+      "price": 999,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/150",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "description": "Noise-cancelling over-ear headphones",
+      "price": 199,
+      "category": "Accessories",
+      "image": "https://via.placeholder.com/150",
+      "stock": 100
+    },
+    {
+      "id": 4,
+      "name": "Coffee Maker",
+      "description": "Automatic drip coffee maker",
+      "price": 49,
+      "category": "Home Appliances",
+      "image": "https://via.placeholder.com/150",
+      "stock": 75
+    },
+    {
+      "id": 5,
+      "name": "Smart Watch",
+      "description": "Fitness tracker with heart rate monitor",
+      "price": 149,
+      "category": "Wearables",
+      "image": "https://via.placeholder.com/150",
+      "stock": 40
+    },
+    {
+      "id": 6,
+      "name": "Tablet",
+      "description": "10-inch tablet with high-resolution display",
+      "price": 299,
+      "category": "Electronics",
+      "image": "https://via.placeholder.com/150",
+      "stock": 60
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "Home Appliances"
+    },
+    {
+      "id": 3,
+      "name": "Accessories"
+    },
+    {
+      "id": 4,
+      "name": "Wearables"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "password123"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "product_id": 1,
+      "quantity": 1,
+      "total_price": 699,
+      "status": "Shipped"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "product_id": 3,
+      "quantity": 2,
+      "total_price": 398,
+      "status": "Processing"
+    }
+  ]
+}
