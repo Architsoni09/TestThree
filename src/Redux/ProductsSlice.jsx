@@ -17,7 +17,6 @@ const productsSlice = createSlice({
         },
         fetchProductsSuccess(state, action) {
             state.isLoading = false;
-            console.log(action);
             state.productData = action.payload;
         },
         fetchProductsError(state, action) {
@@ -29,13 +28,16 @@ const productsSlice = createSlice({
         },
         editProduct(state, action) {
             const index = state.productData.findIndex(product => product.id === action.payload.id);
-            if (index !== -1) {
+            if(index!==-1){
                 state.productData[index] = action.payload;
             }
         },
+        deleteProduct(state, action) {
+            state.productData=state.productData.filter(product =>product.id !== action.payload);
+        }
     },
 });
 
-export const { fetchProductsStart, fetchProductsSuccess, fetchProductsError, addProduct, editProduct } = productsSlice.actions;
+export const { fetchProductsStart,deleteProduct, fetchProductsSuccess, fetchProductsError, addProduct, editProduct } = productsSlice.actions;
 export const productsReducer = productsSlice.reducer;
 // Adjusted selector to access correct state path

@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 
 function Navbar(props) {
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-gradient bg-black ">
@@ -15,7 +16,8 @@ function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink to={"/"} className="text-white nav-link active" aria-current="page" href="#">Products</NavLink>
+                                <NavLink to={"/"} className="text-white nav-link active" aria-current="page"
+                                         href="#">Products <span className="badge text-bg-secondary">{}</span></NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to={"/addProduct"} className="text-white nav-link" href="#">Add a product</NavLink>
