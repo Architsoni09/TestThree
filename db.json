@@ -6,8 +6,9 @@
       "description": "Latest model with high-end features",
       "price": 699,
       "category": "Electronics",
-      "image": "https://via.placeholder.com/150",
-      "stock": 50
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "stock": 50,
+      "rating": 4.5
     },
     {
       "id": 2,
@@ -15,8 +16,9 @@
       "description": "Lightweight and powerful",
       "price": 999,
       "category": "Electronics",
-      "image": "https://via.placeholder.com/150",
-      "stock": 30
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+      "stock": 30,
+      "rating": 4.7
     },
     {
       "id": 3,
@@ -24,8 +26,9 @@
       "description": "Noise-cancelling over-ear headphones",
       "price": 199,
       "category": "Accessories",
-      "image": "https://via.placeholder.com/150",
-      "stock": 100
+      "image": "https://images.unsplash.com/photo-1512499617640-c2f999a6b6d0",
+      "stock": 100,
+      "rating": 4.4
     },
     {
       "id": 4,
@@ -33,8 +36,9 @@
       "description": "Automatic drip coffee maker",
       "price": 49,
       "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150",
-      "stock": 75
+      "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+      "stock": 75,
+      "rating": 4.2
     },
     {
       "id": 5,
@@ -42,8 +46,9 @@
       "description": "Fitness tracker with heart rate monitor",
       "price": 149,
       "category": "Wearables",
-      "image": "https://via.placeholder.com/150",
-      "stock": 40
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "stock": 40,
+      "rating": 4.6
     },
     {
       "id": 6,
@@ -51,8 +56,9 @@
       "description": "10-inch tablet with high-resolution display",
       "price": 299,
       "category": "Electronics",
-      "image": "https://via.placeholder.com/150",
-      "stock": 60
+      "image": "https://images.unsplash.com/photo-1496950866446-3253e1470e8e",
+      "stock": 60,
+      "rating": 4.3
     },
     {
       "id": 7,
@@ -60,8 +66,9 @@
       "description": "Portable Bluetooth speaker with high-quality sound",
       "price": 89,
       "category": "Accessories",
-      "image": "https://via.placeholder.com/150",
-      "stock": 150
+      "image": "https://images.unsplash.com/photo-1593078165340-637b7e305c6f",
+      "stock": 150,
+      "rating": 4.5
     },
     {
       "id": 8,
@@ -69,8 +76,9 @@
       "description": "Energy-efficient double-door refrigerator",
       "price": 799,
       "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150",
-      "stock": 20
+      "image": "https://images.unsplash.com/photo-1593032465175-761d8f99cd41",
+      "stock": 20,
+      "rating": 4.8
     },
     {
       "id": 9,
@@ -78,8 +86,9 @@
       "description": "Convection microwave oven with grill",
       "price": 199,
       "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150",
-      "stock": 35
+      "image": "https://images.unsplash.com/photo-1563223661-a88553907d42",
+      "stock": 35,
+      "rating": 4.4
     },
     {
       "id": 10,
@@ -87,8 +96,9 @@
       "description": "Waterproof fitness tracker with heart rate monitor",
       "price": 79,
       "category": "Wearables",
-      "image": "https://via.placeholder.com/150",
-      "stock": 120
+      "image": "https://images.unsplash.com/photo-1556905055-8f358a8c74d4",
+      "stock": 120,
+      "rating": 4.3
     },
     {
       "id": 11,
@@ -96,8 +106,9 @@
       "description": "Next-gen gaming console with 4K support",
       "price": 499,
       "category": "Electronics",
-      "image": "https://via.placeholder.com/150",
-      "stock": 25
+      "image": "https://images.unsplash.com/photo-1610666321780-733894a1eaa6",
+      "stock": 25,
+      "rating": 4.9
     },
     {
       "id": 12,
@@ -105,8 +116,9 @@
       "description": "Fast-boiling electric kettle with auto shut-off",
       "price": 29,
       "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150",
-      "stock": 90
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+      "stock": 90,
+      "rating": 4.1
     },
     {
       "id": 13,
@@ -114,8 +126,9 @@
       "description": "True wireless earbuds with long battery life",
       "price": 129,
       "category": "Accessories",
-      "image": "https://via.placeholder.com/150",
-      "stock": 200
+      "image": "https://images.unsplash.com/photo-1591804027212-325f353ffacf",
+      "stock": 200,
+      "rating": 4.5
     },
     {
       "id": 14,
@@ -123,8 +136,9 @@
       "description": "WiFi-enabled smart thermostat with remote control",
       "price": 149,
       "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150",
-      "stock": 55
+      "image": "https://images.unsplash.com/photo-1556740714-a8395b3bf30e",
+      "stock": 55,
+      "rating": 4.6
     },
     {
       "id": 15,
@@ -132,8 +146,9 @@
       "description": "Augmented reality smart glasses with voice control",
       "price": 399,
       "category": "Wearables",
-      "image": "https://via.placeholder.com/150",
-      "stock": 10
+      "image": "https://images.unsplash.com/photo-1580894894517-8f3aa3a0e4ca",
+      "stock": 10,
+      "rating": 4.4
     }
   ],
   "categories": [
