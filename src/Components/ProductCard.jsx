@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addProduct, deleteProduct, editProduct, fetchProductsError } from "../Redux/ProductsSlice";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import {Bounce, toast} from "react-toastify";
 
 function ProductCard({ productDetail }) {
     const navigate = useNavigate();
@@ -22,13 +23,46 @@ function ProductCard({ productDetail }) {
             });
             if (response.ok) {
                 dispatch(deleteProduct(id));
+                toast.success('Product Deleted Successfully!', {
+                    position: "top-right",
+                    autoClose: 1500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Bounce,
+                });
             } else {
                 console.error('Failed to delete');
                 dispatch(fetchProductsError("Failed to delete"));
+                toast.error('Something Went wrong!', {
+                    position: "top-right",
+                    autoClose: 1500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                    transition: Bounce,
+                });
             }
         } catch (error) {
             console.error('Error deleting product:', error);
             dispatch(fetchProductsError("Error deleting product"));
+            toast.error('Something Went Wrong!', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
         }
     };
 
@@ -43,9 +77,31 @@ function ProductCard({ productDetail }) {
             });
             const result = await response.json();
             dispatch(editProduct(result));
+            toast.success('Product Updated Successfully!', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
         } catch (error) {
             console.error('Error fetching data:', error);
             dispatch(fetchProductsError(error));
+            toast.error('Something went wrong!', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
         }
     };
 
