@@ -5,14 +5,18 @@ import Home from "./Pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {store} from "./app/store";
 import {Provider} from "react-redux";
-import AddEditForm from "./Components/AddEditForm";
+import AddForm from "./Pages/AddForm";
+import ProductDetail from "./Pages/ProductDetail";
+import Cart from "./Pages/Cart";
 
 function App() {
   const routes=createBrowserRouter([
     {path:"/",element:<Navbar/>,children:[
         {index:true,element:<Home/>},
-            {path:':action/:productId',element:<AddEditForm/>},
-            {path:'addProduct',element:<AddEditForm/>},
+            {path:'addProduct',element:<AddForm/>},
+            {path:'product/:productId',element:<ProductDetail/>},
+            {path:'cart',element:<Cart/>}
+
         ]}
   ])
   return (

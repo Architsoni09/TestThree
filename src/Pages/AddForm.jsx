@@ -1,23 +1,23 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {useNavigate, useParams, useSearchParams} from "react-router-dom";
+import React, { useRef} from 'react';
+import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {addProduct, editProduct, fetchProductsError, productsReducer} from "../Redux/ProductsSlice";
+import {addProduct, fetchProductsError} from "../Redux/ProductsSlice";
 
-function AddEditForm(props) {
+function AddForm(props) {
     const nameRef = useRef(null);
     const categoryRef = useRef(null);
     const priceRef = useRef(null);
     const descriptionRef = useRef(null);
     const imageRef = useRef(null);
     const ratingRef = useRef(null);
-    const {productId,action}=useParams();
+    const {productId}=useParams();
     const {productData}=useSelector((state)=>state.products);
     const dispatch=useDispatch();
     const navigate=useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         const product = {
-            id: productId?productId:productData.length+1,
+            id: productData.length+1,
             name: nameRef.current.value,
             category: categoryRef.current.value,
             price: priceRef.current.value,
@@ -45,11 +45,6 @@ function AddEditForm(props) {
             dispatch(fetchProductsError);
         }
         }
-
-    useEffect(()=>{
-        let index=productData.findIndex((product)=>product.id==productId);
-        setProduct(productData[index]);
-    },[])
 
     return (
         <div style={{minHeight: '92vh', minWidth: '100%'}}
@@ -130,4 +125,4 @@ function AddEditForm(props) {
     );
 }
 
-export default AddEditForm;
+export default AddForm;

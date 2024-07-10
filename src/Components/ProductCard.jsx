@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addProduct, deleteProduct, editProduct, fetchProductsError } from "../Redux/ProductsSlice";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function ProductCard({ productDetail }) {
     const navigate = useNavigate();
@@ -75,7 +76,7 @@ function ProductCard({ productDetail }) {
         <div className={`card w-75 mt-5 bg-info text-white d-flex flex-column ${isEditing ? 'border border-warning' : ''}`}>
             <div className="card-body d-flex flex-wrap justify-content-between">
                 <div className="image-container d-flex justify-content-center align-items-center" style={{ flex: 1, minWidth: '30%' }}>
-                    <img alt="Product" className="img-fluid" src={productDetail.image} style={{ maxHeight: '200px', objectFit: 'cover' }} />
+                    <img onClick={()=>navigate(`/product/${productDetail.id}`)} alt="Product" className="img-fluid" src={productDetail.image} style={{ maxHeight: '200px', objectFit: 'cover' }} />
                 </div>
                 {isEditing ? (
                     <div className="d-flex flex-column justify-content-center align-items-center"
@@ -111,9 +112,11 @@ function ProductCard({ productDetail }) {
                         {isEditing ? (
                             <button className="btn btn-success btn-sm me-2" onClick={handleSave}>Save</button>
                         ) : (
-                                <button className="btn btn-primary btn-sm" onClick={() => setIsEditing(true)}>Edit</button>
+                            <button className="btn btn-primary btn-sm" onClick={() => setIsEditing(true)}><i
+                                className="bi bi-pencil"></i></button>
                         )}
-                        <button className="btn btn-danger btn-sm ms-3" onClick={() => handleDelete(productDetail.id)}>Delete</button>
+                        <button className="btn btn-danger btn-sm ms-3" onClick={() => handleDelete(productDetail.id)}><i
+                            className="bi bi-trash"></i></button>
                     </div>
                 </div>
             </div>

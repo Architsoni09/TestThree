@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {fetchProductsError, fetchProductsStart, fetchProductsSuccess, productsSelector} from "../Redux/ProductsSlice";
-import {createSelector} from "@reduxjs/toolkit";
-import {store} from "../app/store";
+import {fetchProductsError, fetchProductsStart, fetchProductsSuccess,} from "../Redux/ProductsSlice";
 import ProductCard from "../Components/ProductCard";
 
 function Home(props) {
@@ -54,6 +52,7 @@ function Home(props) {
                 <div style={{height: '80px'}}
                      className="d-flex justify-content-end flex-wrap align-items-center w-75 bg-dark">
                     <button type="button" className="btn btn-primary">Sort By Price</button>
+                    <button type="button" className="btn-close" aria-label="Close"></button>
                 </div>
                 {products.productData.map((product) => <ProductCard key={product.id} productDetail={product}/>)}
             </div>
