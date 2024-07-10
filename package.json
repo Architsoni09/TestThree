@@ -2,7 +2,7 @@
   "name": "testthree",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Architsoni09.github.io/TestThree",
+  "homepage": "https://architsoni09.github.io/TestThree",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@reduxjs/toolkit": "^2.2.6",
