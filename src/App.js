@@ -28,7 +28,7 @@ function App() {
     return (
         <Provider store={store}>
             <div className="App">
-                <RouterProvider router={routes} />
+                <RouterProvider basename="/TestThree" router={routes} />
                 <ToastContainer
                     position="top-right"
                     autoClose={1600}
