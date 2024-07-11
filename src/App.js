@@ -1,6 +1,6 @@
 // src/App.js
 import './App.css';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +20,8 @@ function App() {
                 { index: true, element: <Home /> },
                 { path: 'addProduct', element: <AddForm /> },
                 { path: 'product/:productId', element: <ProductDetail /> },
-                { path: 'cart', element: <Cart /> }
+                { path: 'cart', element: <Cart /> },
+                {path : '*', element: <Navigate to={"/"}/>}
             ]
         }
     ]);
@@ -28,7 +29,7 @@ function App() {
     return (
         <Provider store={store}>
             <div className="App">
-                <RouterProvider basename="/TestThree" router={routes} />
+                <RouterProvider basename={process.env.PUBLIC_URL} router={routes} />
                 <ToastContainer
                     position="top-right"
                     autoClose={1600}
